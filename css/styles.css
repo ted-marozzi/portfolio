@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Simonetta&display=swap');
 * {
-    
     font-family: 'Simonetta';
-    background-color: rgb(41, 184, 219);
+    background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
     text-align: center;
-    
-
+    color: rgb(0, 112, 192);
 }
 
 body * {
@@ -94,8 +92,8 @@ a {
 .youtube-video iframe {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
 
 }
