@@ -1,99 +1,83 @@
-@import url('https://fonts.googleapis.com/css?family=Simonetta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* All */
 * {
-    font-family: 'Simonetta';
-    background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
-    text-align: center;
-    color: rgb(0, 112, 192);
-}
-
-body * {
-    display: block;
-}
-
-
-
-/* Header */
-header {
-
-    font-size: 2vh + 2vw;
-}
-
-header h1 {
-    margin-bottom: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round';
     
 }
 
-
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+/* Nav Bar*/
+#nav {
+    /*Text to the right */
+    padding: 20px;
+    
+    text-align: right;
 }
 
-nav li{
-    display: inline-block;
-
+/* Nav list items in a line */
+#nav li{
+    display: inline;
+    padding: 5px;
 }
 
-nav a{
-
-    font-weight: 900;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    padding: 0.5rem;
-}
-
-img {
-
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-
-}
-
-
+/*Links */
 a {
-    
-    background-color: rgb(0,0,0,0);
-
-}
-
-/*Img and  text */
-.port-item {
-    position: relative;    
-}
-
-/* Link text */
-.button {
-    /* Centered text */
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     text-decoration: none;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.4);
-    font-size: 2vh + 2vw;
+    font-size: 2vw;
+    color: lightblue;
+}
+
+
+
+/* Split the screen in half */
+.split {
+    height: 80%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    
+}
+
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color:lightblue;
+    color: rgb(8, 99, 184);;
+    
+    
+}
   
+/* Control the right side */
+.right {
+    text-align: right;
+    right: 0;
+    background-color:rgb(8, 99, 184);
+    color: lightblue;
+    
+    
 }
 
-.youtube-video {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
+.title {
+    padding: 30px;
+    font-size: 5vw;
+    font-weight: bolder;
 }
 
-.youtube-video iframe {
+#first-name {
     position: absolute;
     top: 0;
-    left: 10%;
-    width: 80%;
-    height: 80%;
-
+    left: 0;
+    
 }
+
+#last-name {
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
