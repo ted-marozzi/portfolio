@@ -8,6 +8,13 @@
     
 }
 
+#top {
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
 /* Nav Bar*/
 #nav {
     /*Text to the right */
@@ -26,14 +33,14 @@
 a {
     text-decoration: none;
     font-size: 2vw;
-    color: lightblue;
+    color: rgb(68,114,196);;
 }
 
 
 
 /* Split the screen in half */
 .split {
-    height: 80%;
+    height: 100%;
     width: 50%;
     position: fixed;
     top: 0;
@@ -44,8 +51,8 @@ a {
 /* Control the left side */
 .left {
     left: 0;
-    background-color:lightblue;
-    color: rgb(8, 99, 184);;
+    background-color:rgb(68,114,196);
+    color: #BDCFF0;
     
     
 }
@@ -54,15 +61,15 @@ a {
 .right {
     text-align: right;
     right: 0;
-    background-color:rgb(8, 99, 184);
-    color: lightblue;
+    background-color: #BDCFF0;
+    color: rgb(68,114,196);
     
     
 }
 
 .title {
     padding: 30px;
-    font-size: 5vw;
+    font-size: 8vw;
     font-weight: bolder;
 }
 
@@ -81,3 +88,30 @@ a {
     
 }
 
+.vertical-center {
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+#port-img {
+    position: relative;
+    z-index: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}   
+
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25vw;
+    border-radius: 5%;
+}
