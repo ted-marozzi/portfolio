@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* All */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round';
+    
+}
+
+#top {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* Nav Bar*/
+.nav {
+    /*Text to the right */
+    padding: 20px;
+
+    list-style: none;
+    
+    text-align: right;
+    display: flex;
+
+    justify-content: flex-end;
+
+}
+
+/* Nav list items in a line */
+.nav li{
+    
+    padding: 20px;
+
+
+}
+
+/*Links */
+a {
+    text-decoration: none;
+    font-size: 2vw;
+    color: rgb(68,114,196);
+}
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+
+    
+    
+}
+
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color:rgb(68,114,196);
+    color: #BDCFF0;
+    
+    
+}
+  
+/* Control the right side */
+.right {
+    text-align: right;
+    right: 0;
+    background-color: #BDCFF0;
+    color: rgb(68,114,196);
+    
+    
+}
+
+@media screen and (max-aspect-ratio: 1/1)    {
+
+    /* Split the screen in half */
+    .split {
+        height: 50%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+
+        
+        
+    }
+
+
+    /* Control the left side */
+    .left {
+        top: 0;
+        background-color:rgb(68,114,196);
+        color: #BDCFF0;
+        
+        
+    }
+    
+    /* Control the right side */
+    .right {
+        text-align: right;
+        bottom: 0;
+        background-color: #BDCFF0;
+        color: rgb(68,114,196);
+        
+        
+    }
+
+    
+
+}
+
+
+
+.title {
+    padding: 30px;
+    font-size: 8vw;
+    font-weight: bolder;
+}
+
+#first-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+#last-name {
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.vertical-center {
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+#port-img {
+    position: relative;
+    z-index: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}   
+
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25vw;
+    border-radius: 5%;
+}
+-->

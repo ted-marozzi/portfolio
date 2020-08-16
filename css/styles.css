@@ -8,96 +8,66 @@
     
 }
 
-#top {
-    
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
+
 
 /* Nav Bar*/
-#nav {
+.nav {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: auto;
     /*Text to the right */
     padding: 20px;
+
+    list-style: none;
     
     text-align: right;
+    display: flex;
+
+    justify-content: flex-end;
+
 }
 
 /* Nav list items in a line */
-#nav li{
-    display: inline;
-    padding: 5px;
+.nav li{
+    
+    padding: 20px;
+
+
 }
 
 /*Links */
 a {
     text-decoration: none;
-    font-size: 2vw;
-    color: rgb(68,114,196);;
-}
-
-
-
-/* Split the screen in half */
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    top: 0;
-    
-}
-
-
-/* Control the left side */
-.left {
-    left: 0;
-    background-color:rgb(68,114,196);
-    color: #BDCFF0;
     
     
 }
-  
-/* Control the right side */
-.right {
-    text-align: right;
-    right: 0;
-    background-color: #BDCFF0;
+
+.dark-blue {
     color: rgb(68,114,196);
-    
-    
 }
 
-.title {
+.light-blue {
+    color: #BDCFF0;
+}
+
+.dark-blue-background {
+    background-color: rgb(68,114,196);
+}
+
+.light-blue-background {
+    background-color: #BDCFF0;
+}
+
+.medium-font {
+    font-size: 2vw;
+}
+
+.large-font {
     padding: 30px;
     font-size: 8vw;
     font-weight: bolder;
 }
-
-#first-name {
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-}
-
-#last-name {
-
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    
-}
-
-.vertical-center {
-
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-
 
 #port-img {
     position: relative;
@@ -115,3 +85,91 @@ img {
     width: 25vw;
     border-radius: 5%;
 }
+
+/**************************************************************************
+*Split
+**************************************************************************/
+
+
+.split {
+    top: 0;
+    display: flex;
+    height: 100vh;
+
+
+
+}
+
+#home-top-one  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+
+}
+
+#home-top-two  {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 50%;
+    height: 100%;
+
+}
+
+.bottom-right   {
+    padding: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.top-left  {
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.light-dark-blue {
+
+    color: #BDCFF0;
+
+}
+
+@media screen and (max-aspect-ratio: 1/1)    {
+
+    #home-top-one  {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    
+    }
+    
+    #home-top-two  {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    
+        width: 100%;
+        height: 50%;
+    
+    }
+
+    .light-dark-blue {
+
+        color: #BDCFF0;
+        color: rgb(68,114,196);
+    
+    }
+
+}
+
+/**************************************************************************
+*
+**************************************************************************/
