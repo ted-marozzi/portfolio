@@ -31,7 +31,7 @@
 /* Nav list items in a line */
 .nav li{
     
-    padding: 20px;
+    padding: 10px;
 
 
 }
@@ -60,7 +60,7 @@ a {
 }
 
 .medium-font {
-    font-size: 2vw;
+    font-size: calc(1.5vw + 5px);
 }
 
 .large-font {
@@ -69,22 +69,33 @@ a {
     font-weight: bolder;
 }
 
-#port-img {
-    position: relative;
+.port {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    
     z-index: 1;
     
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
-}   
+    height: 100vh;
+    width: 100vw;
 
 
-img {
+}
+
+
+
+.port-img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 25vw;
+    width: calc(20vw + 150px);
     border-radius: 5%;
 }
+
+
 
 /**************************************************************************
 *Split
@@ -173,3 +184,52 @@ img {
 /**************************************************************************
 *
 **************************************************************************/
+
+.full-width  {
+    width: 100vw;
+}
+
+.full-height    {
+    height: 100vh;
+}
+
+.half-height    {
+    height: 50vh;
+}
+
+.centered-text   {
+    text-align: center;
+}
+
+
+p   {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.centered {   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.auto-height   {
+    height: auto;
+}
+
+.row    {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+
+.logo   {
+    
+    height: 50px;
+    width: 50px;
+}
