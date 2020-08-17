@@ -22,8 +22,7 @@
 *   Util classes
 **************************************************************************/
 
-
-
+/* Color */
 .dark-blue {
     color: rgb(68,114,196);
 }
@@ -39,29 +38,77 @@
 .light-blue-background {
     background-color: #BDCFF0;
 }
-
+/* Font */
 .medium-font {
     font-size: calc(1.5vw + 5px);
 }
 
 .large-font {
-    padding: 30px;
     font-size: 8vw;
     font-weight: bolder;
 }
 
 
+/* Layout */
 .center-in-container    {
 
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
 
+.centered-text   {
+    text-align: center;
+}
 
+.col {   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.row    {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
+.bottom-right   {
+    padding: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.top-left  {
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.full-screen-height    {
+    height: 100vh;
+    
+}
+
+.half-screen-height    {
+    height: 50vh;
+    
+}
+
+.full-height    {
+    height: 100%;
+}
+
+
+.auto-height   {
+    height: auto;
+}
 
 
 /* Nav Bar*/
@@ -82,27 +129,12 @@
 
 }
 
-/* Nav list items in a line */
-.nav li{
-    
+.nav li{  
     padding: 10px;
-
-
 }
 
-.bottom-right   {
-    padding: 50px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
 
-.top-left  {
-    padding: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+/* Logo */
 
 .logo   {
     
@@ -110,42 +142,11 @@
     width: 50px;
 }
 
-
-
-.full-screen-height    {
-    height: 100vh;
-    
-}
-
-.full-height    {
-    height: 100%;
-}
-
-
-.centered-text   {
-    text-align: center;
-}
-
-
-
-.centered {   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    
-}
-
-.auto-height   {
-    height: auto;
-}
-
-.row    {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
+.circle-img {
+    border-radius: 50%;
+    --height: 20%;
+    height: 20vw;
+    width: 20vw;
 
 }
 
@@ -168,7 +169,6 @@ a {
 
 p   {
     padding: 30px;
-    
 }
 
   
@@ -185,6 +185,8 @@ p   {
     width: 50%;
     height: 100%;
 
+    padding: 30px;
+
 }
 
 #home-top-two  {
@@ -195,6 +197,7 @@ p   {
     width: 50%;
     height: 100%;
 
+    padding: 30px;
 }
 
 
@@ -234,6 +237,7 @@ p   {
 
 }
 
+/* portfolio img */
 
 #port-img {
 
@@ -250,3 +254,13 @@ p   {
 }
 
 
+/* TODO: Media query for mobile to make square */
+
+#proj-window    {
+    padding: 50px;
+}
+
+
+#proj-button    {
+    margin: auto;
+}
