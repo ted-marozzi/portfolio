@@ -1,5 +1,15 @@
+
+/**************************************************************************
+*   Font
+**************************************************************************/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-/* All */
+
+
+/**************************************************************************
+*   All
+**************************************************************************/
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +17,50 @@
     font-family: 'Varela Round';
     
 }
+
+/**************************************************************************
+*   Util classes
+**************************************************************************/
+
+
+
+.dark-blue {
+    color: rgb(68,114,196);
+}
+
+.light-blue {
+    color: #BDCFF0;
+}
+
+.dark-blue-background {
+    background-color: rgb(68,114,196);
+}
+
+.light-blue-background {
+    background-color: #BDCFF0;
+}
+
+.medium-font {
+    font-size: calc(1.5vw + 5px);
+}
+
+.large-font {
+    padding: 30px;
+    font-size: 8vw;
+    font-weight: bolder;
+}
+
+
+.center-in-container    {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
 
 
 
@@ -36,6 +90,74 @@
 
 }
 
+.bottom-right   {
+    padding: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.top-left  {
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo   {
+    
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.full-screen-height    {
+    height: 100vh;
+    
+}
+
+.full-height    {
+    height: 100%;
+}
+
+
+.centered-text   {
+    text-align: center;
+}
+
+
+
+.centered {   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.auto-height   {
+    height: auto;
+}
+
+.row    {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+
+
+
+
+
+
+/**************************************************************************
+*   Html Elements
+**************************************************************************/
+
 /*Links */
 a {
     text-decoration: none;
@@ -43,68 +165,18 @@ a {
     
 }
 
-.dark-blue {
-    color: rgb(68,114,196);
-}
 
-.light-blue {
-    color: #BDCFF0;
-}
-
-.dark-blue-background {
-    background-color: rgb(68,114,196);
-}
-
-.light-blue-background {
-    background-color: #BDCFF0;
-}
-
-.medium-font {
-    font-size: calc(1.5vw + 5px);
-}
-
-.large-font {
+p   {
     padding: 30px;
-    font-size: 8vw;
-    font-weight: bolder;
-}
-
-
-
-
-
-.port-img {
-
-    --size: calc(20vw + 125px);
-    width: var(--size);
-    height: var(--size);
-
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
     
-    transform: translate(-50%, -50%);
-
-    z-index: 1;
-
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    border-radius: 5%;
 }
 
-
-
+  
 /**************************************************************************
-*Split
+* Home Page
 **************************************************************************/
 
-
-.split {
-    top: 0;
-    display: flex;
-
-}
+/* Split */
 
 #home-top-one  {
     position: absolute;
@@ -125,20 +197,6 @@ a {
 
 }
 
-.bottom-right   {
-    padding: 50px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.top-left  {
-    padding: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
 
 .light-dark-blue {
 
@@ -176,73 +234,19 @@ a {
 
 }
 
-/**************************************************************************
-*
-**************************************************************************/
-/*TODO: FIX IPHONE VH ISSUE*/
 
-/* fix iOS bug not displaying 100vh correctly */
-.full-screen-height    {
-    height: 100vh;
-    
+#port-img {
+
+    --size: calc(20vw + 125px);
+    width: var(--size);
+    height: var(--size);
+
+
+    z-index: 1;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    border-radius: 5%;
 }
 
 
-
-
-
-.full-screen-width  {
-    width: 100vw;
-}
-
-
-
-.full-height{
-    height: 100%;
-}
-
-
-.full-width{
-    width: 50%;
-}
-
-.half-height    {
-    height: 50vh;
-}
-
-.centered-text   {
-    text-align: center;
-}
-
-
-p   {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.centered {   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    
-}
-
-.auto-height   {
-    height: auto;
-}
-
-.row    {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-
-}
-
-.logo   {
-    
-    height: 50px;
-    width: 50px;
-}
