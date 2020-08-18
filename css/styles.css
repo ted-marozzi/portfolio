@@ -48,7 +48,7 @@
 }
 
 .large-font {
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: bolder;
 }
 
@@ -66,9 +66,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px
 
-   
+}
+
+.left-text  {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 4vw;
 }
 
 .col {   
@@ -105,6 +110,17 @@
     
 }
 
+.full-screen-width    {
+    width: 100vh;
+    
+}
+
+.half-screen-width    {
+    width: 50vh;
+    
+}
+
+
 .half-screen-height    {
     height: 50vh;
     
@@ -112,7 +128,6 @@
 
 .quarter-screen-height    {
     height: 25vh;
-    
 }
 
 .full-height    {
@@ -154,6 +169,7 @@
     
     height: 50px;
     width: 50px;
+
 }
 
 .circle-img {
@@ -162,6 +178,12 @@
     height: calc(10vw + 50px);
     width: calc(10vw + 50px);
 
+}
+
+
+
+.space-around   {
+    justify-content: space-around;
 }
 
 
@@ -176,8 +198,7 @@
 /*Links */
 a {
     text-decoration: none;
-    
-    
+
 }
 
 
@@ -267,6 +288,11 @@ p   {
     border-radius: 5%;
 }
 
+#logo-bar   {
+ 
+    padding: 40px;
+}
+
 #proj-window    {
     padding: 0px;
 }
@@ -287,4 +313,63 @@ p   {
     padding: 20px;
 }
 
+
+/**************************************************************************
+* Project Page
+**************************************************************************/
+
+
+
+
+.square-img {
+    border-radius: 20%;
+    
+    height: calc(15vw + 50px);
+    width: calc(15vw + 50px);
+
+}
+
+.proj-prev-cont {
+
+    height: calc(15vw + 50px);
+    width: calc(15vw + 50px);
+    padding: 8vw;
+}
+
+#proj-all   {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.proj-row   {
+    padding-top: 2vw;
+    justify-content: space-evenly;
+}
+
+.img-text   {
+    padding: 0px;
+}
+
+.proj-img   {
+    width: calc(30vw + 100px);
+    height: calc(30vw + 100px);
+    
+    padding: 30px;
+    border-radius: 20%;
+
+    object-fit: contain;
+}
+
+.proj-page  {
+    align-items: center;
+}
+
+.proj-desc  {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
 
