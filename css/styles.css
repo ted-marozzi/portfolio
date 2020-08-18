@@ -38,13 +38,17 @@
 .light-blue-background {
     background-color: #BDCFF0;
 }
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* Font */
 .medium-font {
     font-size: calc(1.5vw + 5px);
 }
 
 .large-font {
-    font-size: 8vw;
+    font-size: 7vw;
     font-weight: bolder;
 }
 
@@ -59,7 +63,12 @@
 }
 
 .centered-text   {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px
+
+   
 }
 
 .col {   
@@ -98,6 +107,11 @@
 
 .half-screen-height    {
     height: 50vh;
+    
+}
+
+.quarter-screen-height    {
+    height: 25vh;
     
 }
 
@@ -144,9 +158,9 @@
 
 .circle-img {
     border-radius: 50%;
-    --height: 20%;
-    height: 20vw;
-    width: 20vw;
+    
+    height: calc(10vw + 50px);
+    width: calc(10vw + 50px);
 
 }
 
@@ -248,19 +262,29 @@ p   {
 
     z-index: 1;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 
     border-radius: 5%;
 }
 
-
-/* TODO: Media query for mobile to make square */
-
 #proj-window    {
-    padding: 50px;
+    padding: 0px;
 }
 
 
+
+
+#text-box   {
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+
+/* Fix padding bottom */
 #proj-button    {
     margin: auto;
+    padding: 20px;
 }
+
+
