@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Varela Round';
+    font-family: 'Roboto';
+    font-weight: bold;
 }
 
 html, body {
@@ -42,20 +43,180 @@ h1  {
     gap: 25px;
 }
 
-#myprojects {
+
+#aboutme > div > div {
+    min-width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#homemyprojects {
     background-color: orange;
+
+}
+/* GRID */
+#homemyprojects > div {
+    margin: auto;
+    text-align: center;
+    
     display: grid;
-    grid-gap: 20px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    max-width: 75%;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "homemyprojects homemyprojects homemyprojects"
+                            "project1 seeall project2"
+                            "project3 project4 project5";
+
     color: white;
 }
 
-#myprojects a {
-    border-style: solid;
+
+#homemyprojects img    {
+    border-radius: 10%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+/* Tile */
+#homemyprojects > div > div {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#homemyprojects a {
+   
+    margin: auto;
     text-decoration: none;
-    padding: 10px;
+    
     color: white;
 }
+
+#homemyprojects div #seeall {
+    background-color: red;
+    
+    max-width: 300px;
+    max-height: 300px;
+
+    border-radius: 10%;
+    
+    
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+  
+
+    #homemyprojects > div {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "homemyprojects homemyprojects"
+        "seeall project1"
+        "project2 project3"
+        "project4 project5" ;
+
+    }
+
+    #homemyprojects img {
+
+        max-width: 250px;
+        max-height: 250px;
+
+    }
+
+    #homemyprojects div #seeall {
+        background-color: red;
+        
+        max-width: 250px;
+        max-height: 250px;
+
+    }
+    
+
+}
+
+@media only screen and (max-width: 800px) {
+    
+    h1 {
+        font-size: 3rem;
+    }
+
+    #homemyprojects > div {
+   
+        grid-template-columns: 1fr;
+        grid-template-areas: "homemyprojects"
+        "seeall"
+        "project1"
+        "project2" 
+        "project3"
+        "project4" 
+        "project5" ;
+
+    }
+
+
+    #homemyprojects img {
+
+        max-width: 190px;
+        max-height: 190px;
+
+    }
+    
+
+    #homemyprojects div #seeall {
+        background-color: red;
+        
+        height: 190px;
+        width: 190px;
+
+    }
+    
+    
+
+}
+
+
+#homemyprojects > div > h1 {
+    grid-area: homemyprojects;
+    padding: 20px;
+}
+
+#homemyprojects > div > #seeall   { 
+    margin: auto;
+    grid-area: seeall;
+}
+
+#homemyprojects > div .project1   {
+    grid-area: project1;
+}
+
+#homemyprojects > div .project2   {
+    grid-area: project2;
+}
+
+#homemyprojects > div .project3   {
+    grid-area: project3;
+}
+
+#homemyprojects > div .project4   {
+    grid-area: project4;
+}
+
+#homemyprojects > div .project5   {
+    grid-area: project5;
+}
+
+
+
+
+/* END GRID */
+
+
+
 
 #footer {
     background-color: white;
