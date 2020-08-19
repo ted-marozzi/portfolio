@@ -22,6 +22,8 @@ h1  {
 }
 
 #aboutme {
+    
+    padding: 50px;
     min-height: 50vh;
     display: flex;
     background-color: white;
@@ -29,6 +31,7 @@ h1  {
 
 #aboutme .icons img {
     width: 50px;
+
 }
 
 #aboutme > div  {
@@ -72,11 +75,6 @@ h1  {
 }
 
 
-#homemyprojects img    {
-    border-radius: 10%;
-    max-width: 300px;
-    max-height: 300px;
-}
 
 
 /* Tile */
@@ -95,11 +93,18 @@ h1  {
     color: white;
 }
 
+#homemyprojects img    {
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+}
+
+
 #homemyprojects div #seeall {
     background-color: red;
     
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
 
     border-radius: 10%;
     
