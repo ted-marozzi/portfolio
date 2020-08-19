@@ -1,359 +1,63 @@
-
-/**************************************************************************
-*   Font
-**************************************************************************/
-
-
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-
-/**************************************************************************
-*   All
-**************************************************************************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Varela Round';
-    
 }
 
-/**************************************************************************
-*   Util classes
-**************************************************************************/
-
-/* Color */
-.dark-blue {
-    color: rgb(68,114,196);
+html, body {
+    min-height: 100vh;
 }
 
-.light-blue {
-    color: #BDCFF0;
-}
-
-.dark-blue-background {
-    background-color: rgb(68,114,196);
-}
-
-.light-blue-background {
-    background-color: #BDCFF0;
-}
-
-.shadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-/* Font */
-.medium-font {
-    font-size: 3rem;
-}
-
-.large-font {
-    font-size: 8rem;
-    font-weight: bolder;
-}
-
-
-/* Layout */
-.center-in-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
-}
-
-#section-one {
+body section {
     background-color: green;
-    height: 100vh;
-    width: 100vw;
-
+    padding: 2rem;
 }
 
-.centered-text   {
+h1  {
+    font-size: 5rem;
+}
+
+#aboutme {
+    min-height: 50vh;
     display: flex;
+    background-color: white;
+}
+
+#aboutme .icons img {
+    width: 50px;
+}
+
+#aboutme > div  {
+    max-width: 75%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
+    gap: 25px;
 }
 
-.left-text  {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-left: 4vw;
+#myprojects {
+    background-color: orange;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white;
 }
 
-.col {   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.row    {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-
-.bottom-right   {
-    padding: 50px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.top-left  {
-    padding: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.half-screen-width    {
-    width: 50vh;
-    
-}
-
-
-.half-screen-height    {
-    height: 50vh;
-    
-}
-
-.quarter-screen-height    {
-    height: 25vh;
-}
-
-.full-height    {
-    height: 100%;
-}
-
-
-.auto-height   {
-    height: auto;
-}
-
-
-/* Nav Bar*/
-.nav {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    width: auto;
-    /*Text to the right */
-    padding: 20px;
-
-    list-style: none;
-    
-    text-align: right;
-    display: flex;
-
-    justify-content: flex-end;
-
-}
-
-.nav li{  
-    padding: 10px;
-}
-
-
-/* Logo */
-
-.logo   {
-    
-    height: 50px;
-    width: 50px;
-
-}
-
-.circle-img {
-    border-radius: 50%;
-    
-    height: calc(10vw + 50px);
-    width: calc(10vw + 50px);
-
-}
-
-
-
-.space-around   {
-    justify-content: space-around;
-}
-
-
-
-
-
-
-/**************************************************************************
-*   Html Elements
-**************************************************************************/
-
-/*Links */
-a {
+#myprojects a {
+    border-style: solid;
     text-decoration: none;
-
+    padding: 10px;
+    color: white;
 }
 
-
-p   {
-    padding: 30px;
+#footer {
+    background-color: white;
+    text-align: center;
 }
-
-  
-/**************************************************************************
-* Home Page
-**************************************************************************/
-
-/* Split */
-
-#home-top-one, #home-top-two  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-
-    padding: 30px;
-}
-
-#home-top-two {
-    left: initial;
-    right: 0;
-}
-
-.light-dark-blue {
-    color: #BDCFF0;
-}
-
-@media screen and (max-width: 570px) {
-    .large-font {
-        font-size: 5rem;
-    }
-}
-
-@media screen and (max-aspect-ratio: 1/1)    {
-
-    #home-top-one  {
-        padding-top: 80px;
-    }
-
-    #home-top-one, #home-top-two {
-        width: 100%;
-        height: 50%;
-    }
-    
-
-    .light-dark-blue {
-
-        color: #BDCFF0;
-        color: rgb(68,114,196);
-    
-    }
-
-}
-
-/* portfolio img */
-
-#port-img {
-
-    --size: calc(20vw + 125px);
-    width: var(--size);
-    height: var(--size);
-
-    z-index: 1;
-
-    border-radius: 5%;
-}
-
-#logo-bar   {
- 
-    padding: 40px;
-}
-
-#proj-window    {
-    padding: 0px;
-}
-
-
-
-
-#text-box   {
-    margin: auto;
-    border-radius: 5px;
-
-}
-
-
-/* Fix padding bottom */
-#proj-button    {
-    margin: auto;
-    padding: 20px;
-}
-
-
-/**************************************************************************
-* Project Page
-**************************************************************************/
-
-
-
-
-.square-img {
-    border-radius: 20%;
-    
-    height: calc(15vw + 50px);
-    width: calc(15vw + 50px);
-
-}
-
-.proj-prev-cont {
-
-    height: calc(15vw + 50px);
-    width: calc(15vw + 50px);
-    padding: 8vw;
-}
-
-#proj-all   {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-}
-
-.proj-row   {
-    padding-top: 2vw;
-    justify-content: space-evenly;
-}
-
-.img-text   {
-    padding: 0px;
-}
-
-.proj-img   {
-    width: calc(30vw + 100px);
-    height: calc(30vw + 100px);
-    
-    padding: 30px;
-    border-radius: 20%;
-
-    object-fit: contain;
-}
-
-.proj-page  {
-    align-items: center;
-}
-
-.proj-desc  {
-    padding-left: 10%;
-    padding-right: 10%;
-
-}
-
