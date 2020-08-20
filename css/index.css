@@ -1,72 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
 }
+
+
+/* Used to debug layout can remove at end */
 
 body section {
     background-color: green;
     padding: 2rem;
 }
 
-h1  {
+h1 {
     font-size: 5rem;
 }
 
-span, p  {
+span,
+p {
     font-size: 1.5rem;
 }
 
-a   {
+a {
     text-decoration: none;
-   
-}
-
-#nav a{
-    color: rgb(68,114,196);
 }
 
 
-#homehero   {
+/* Navigation links */
+
+#nav a {
+    color: rgb(68, 114, 196);
+}
+
+#homehero {
     padding: 0;
 }
 
 
-#homeherogrid   {
+/* Home hero grid positioning */
+
+#homeherogrid {
     width: 100%;
-    background-color: rgb(68,114,196);
+    background-color: rgb(68, 114, 196);
     min-height: 100vh;
     padding: 0%;
-
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "splitone splitone splittwo splittwo" 
-    "splitone splitone splittwo splittwo" 
-    "splitone splitone splittwo splittwo" 
-    "splitone splitone splittwo splittwo";
-
+    grid-template-areas: "splitone splitone splittwo splittwo" "splitone splitone splittwo splittwo" "splitone splitone splittwo splittwo" "splitone splitone splittwo splittwo";
 }
 
-#nav    {
+
+/* Nav bar grid positioning */
+
+#nav {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 3;
     grid-column-end: 5;
     z-index: 1;
- 
-
 }
 
+
+/* Nav bar list items */
 
 #nav ul {
     display: flex;
@@ -75,102 +79,82 @@ a   {
     padding: 15px;
     justify-content: flex-end;
     gap: 25px;
-
-    color: rgb(68,114,196);
-
+    color: rgb(68, 114, 196);
     font-size: 2rem;
     text-decoration: none;
 }
 
 
-#splitone   {
+/* home split screen */
+
+#splitone {
     grid-area: splitone;
     padding: 50px;
 }
 
-
-#splittwo   {
-    background-color: #BDCFF0;
+#splittwo {
+    background-color: #bdcff0;
     grid-area: splittwo;
     position: relative;
-
 }
 
-#portimg   {
+
+/* Portrait image container */
+
+#portimg {
     grid-row-start: 2;
     grid-row-end: 4;
-
     grid-column-start: 2;
     grid-column-end: 4;
     z-index: 1;
-
     width: 100%;
     height: 100%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#portimg  > img {
 
+/* Actual image */
+
+#portimg>img {
     border-radius: 10%;
     width: 350px;
     height: 350px;
-
 }
 
-#splitone > h1  {
-    color: #BDCFF0;
 
+/* Split color before aspect invert */
+
+#splitone>h1 {
+    color: #bdcff0;
 }
 
-#splittwo > h1  {
+#splittwo>h1 {
     text-align: right;
     position: absolute;
     bottom: 50px;
     right: 50px;
-    color:rgb(68,114,196);
+    color: rgb(68, 114, 196);
 }
 
 
-
+/* Aspect ratio invert */
 
 @media (max-aspect-ratio: 1/1) {
-    
-
-    #homeherogrid  {
-       
-        grid-template-columns:  1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "splitone splitone splitone splitone" 
-        "splitone splitone splitone splitone" 
-        "splittwo splittwo splittwo splittwo" 
-        "splittwo splittwo splittwo splittwo";
-    
+    #homeherogrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "splitone splitone splitone splitone" "splitone splitone splitone splitone" "splittwo splittwo splittwo splittwo" "splittwo splittwo splittwo splittwo";
     }
-
-
- 
-
-    #nav a{
-        color: #BDCFF0;
+    #nav a {
+        color: #bdcff0;
     }
-    
-
-
-
-   
 }
 
 
-
-
-
+/* Section */
 
 #aboutme {
-    
- 
     min-height: 50vh;
     display: flex;
     background-color: white;
@@ -178,10 +162,9 @@ a   {
 
 #aboutme .icons img {
     width: 50px;
-
 }
 
-#aboutme > div  {
+#aboutme>div {
     max-width: 75%;
     height: 100%;
     margin: auto;
@@ -193,203 +176,143 @@ a   {
     gap: 30px;
 }
 
-
-#aboutme > div > div {
+#aboutme>div>div {
     min-width: 75%;
     display: flex;
     justify-content: space-evenly;
 }
 
-#homemyprojects {
-    background-color: #BDCFF0;
 
+/* Projects */
+
+#homemyprojects {
+    background-color: #bdcff0;
 }
 
 #homemyprojects h1 {
-    color:rgb(68,114,196);
+    color: rgb(68, 114, 196);
 }
-/* GRID */
-#homemyprojects > div {
+
+
+/* Grid */
+
+#homemyprojects>div {
     margin: auto;
     text-align: center;
-    
     display: grid;
     grid-gap: 50px;
     max-width: 75%;
-
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "homemyprojects homemyprojects homemyprojects"
-                            "project1 seeall project2"
-                            "project3 project4 project5";
-
+    grid-template-areas: "homemyprojects homemyprojects homemyprojects" "project1 seeall project2" "project3 project4 project5";
     color: white;
 }
 
 
+/* Image Tile */
 
-
-/* Tile */
-#homemyprojects > div > div > a {
-    
+#homemyprojects>div>div>a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-
     gap: 10px;
-    color: rgb(68,114,196);
-
+    color: rgb(68, 114, 196);
     font-size: 1rem;
 }
 
+
+/* Image links */
+
 #homemyprojects a {
-   
     margin: auto;
     text-decoration: none;
-    
     color: white;
 }
 
-#homemyprojects img    {
+#homemyprojects img {
     border-radius: 10%;
     width: 300px;
     height: 300px;
 }
 
 
-
-
+/* Medium size screens */
 
 @media only screen and (max-width: 1400px) {
-
-  
-
-    #homemyprojects > div {
-
+    #homemyprojects>div {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "homemyprojects homemyprojects"
-        "seeall project1"
-        "project2 project3"
-        "project4 project5" ;
-
+        grid-template-areas: "homemyprojects homemyprojects" "seeall project1" "project2 project3" "project4 project5";
     }
-
     #homemyprojects img {
-
         max-width: 250px;
         max-height: 250px;
-
     }
-
-
     #portimg img {
-
         width: 300px;
         height: 300px;
-    
     }
-
 }
 
+
+/* Small screen size */
+
 @media only screen and (max-width: 800px) {
-    
     h1 {
         font-size: 2.5rem;
     }
-
-    #homemyprojects > div {
-   
+    #homemyprojects>div {
         grid-template-columns: 1fr;
-        grid-template-areas: "homemyprojects"
-        "seeall"
-        "project1"
-        "project2" 
-        "project3"
-        "project4" 
-        "project5" ;
-
+        grid-template-areas: "homemyprojects" "seeall" "project1" "project2" "project3" "project4" "project5";
     }
-
-
     #homemyprojects img {
-
         max-width: 190px;
         max-height: 190px;
-
     }
-    
-
-
-    #portimg  img {
-
+    #portimg img {
         width: 200px;
         height: 200px;
-    
     }
-    
     #nav ul {
         font-size: 1.5rem;
     }
-    
-
 }
 
-#homemyprojects > div > div {
+#homemyprojects>div>div {
     display: flex;
     flex-direction: column;
     margin: auto;
+}
 
-}   
-#homemyprojects > div > div > span {
-
+#homemyprojects>div>div>span {
     padding: 10px;
-}   
+}
 
-
-#homemyprojects > div > h1 {
+#homemyprojects>div>h1 {
     grid-area: homemyprojects;
     padding: 20px;
 }
 
-#seeall   { 
+#seeall {
     margin: auto;
     grid-area: seeall;
 }
 
-#project1   {
+#project1 {
     grid-area: project1;
-
-   
 }
 
-#project2   {
+#project2 {
     grid-area: project2;
-
 }
 
-#project3   {
+#project3 {
     grid-area: project3;
 }
 
-#project4   {
+#project4 {
     grid-area: project4;
-
 }
 
-#project5   {
+#project5 {
     grid-area: project5;
-
-}
-
-
-
-
-/* END GRID */
-
-
-
-
-#footer {
-    background-color: white;
-    text-align: center;
 }
