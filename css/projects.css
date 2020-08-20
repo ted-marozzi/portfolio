@@ -1,26 +1,78 @@
-#projectshero {
-    background-color: rgb(68, 114, 196);
-}
-
-
-/* Nav bar list items */
-
-#othernav ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 15px;
-    justify-content: flex-end;
-    gap: 25px;
-    color: rgb(68, 114, 196);
-    font-size: 2rem;
-    text-decoration: none;
-}
-
-#othernav a {
-    padding: 5px;
-    border-radius: 10px;
-    border-style: solid;
-    color: #bdcff0;
-    font-size: 1.25rem;
-}
+    #projectshero {
+        background-color: rgb(68, 114, 196);
+    }
+    /* Nav bar list items */
+    
+    #othernav ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 15px;
+        justify-content: flex-end;
+        gap: 25px;
+        color: rgb(68, 114, 196);
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    
+    #othernav a {
+        padding: 5px;
+        border-radius: 10px;
+        border-style: solid;
+        color: #bdcff0;
+        font-size: 1.25rem;
+    }
+    
+    #pagetitle {
+        color: #bdcff0;
+    }
+    
+    #projectgrid {
+        background-color: white;
+        gap: 25px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #projectgrid>div {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    #projectgrid>div>a {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        color: rgb(68, 114, 196);
+        ;
+    }
+    
+    #projectgrid img {
+        border-radius: 10%;
+        width: 300px;
+        height: 300px;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        #projectgrid {
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            min-height: 100vh;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        #projectgrid {
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            min-height: 100vh;
+        }
+        #projectgrid img {
+            border-radius: 10%;
+            width: 200px;
+            height: 200px;
+        }
+    }

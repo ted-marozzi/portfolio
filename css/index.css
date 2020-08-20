@@ -270,10 +270,6 @@ a {
         grid-template-columns: 1fr;
         grid-template-areas: "homemyprojects" "seeall" "project1" "project2" "project3" "project4" "project5";
     }
-    #homemyprojects img {
-        max-width: 190px;
-        max-height: 190px;
-    }
     #portimg img {
         width: 200px;
         height: 200px;
