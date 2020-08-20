@@ -21,35 +21,107 @@ h1  {
     font-size: 5rem;
 }
 
-#homehero > div  {
-    padding: 50px;
+span, p  {
+    font-size: 1.5rem;
+}
 
+a   {
+    text-decoration: none;
+   
+}
+
+#nav a{
+    color: rgb(68,114,196);
 }
 
 
 #homehero   {
+    padding: 0;
+}
+
+
+#homeherogrid   {
     width: 100%;
-    background-color: slateblue;
+    background-color: rgb(68,114,196);
     min-height: 100vh;
     padding: 0%;
 
     display: grid;
-    grid-template-columns:  1fr 1fr;
-    grid-template-areas: "splitone splittwo";
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "splitone splitone splittwo splittwo" 
+    "splitone splitone splittwo splittwo" 
+    "splitone splitone splittwo splittwo" 
+    "splitone splitone splittwo splittwo";
+
 }
+
+#nav    {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    z-index: 1;
+ 
+
+}
+
+
+#nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 15px;
+    justify-content: flex-end;
+    gap: 25px;
+
+    color: rgb(68,114,196);
+
+    font-size: 2rem;
+    text-decoration: none;
+}
+
 
 #splitone   {
     grid-area: splitone;
-
+    padding: 50px;
 }
 
 
-
-
 #splittwo   {
-    background-color: red;
+    background-color: #BDCFF0;
     grid-area: splittwo;
     position: relative;
+
+}
+
+#portimg   {
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portimg  > img {
+
+    border-radius: 10%;
+    width: 350px;
+    height: 350px;
+
+}
+
+#splitone > h1  {
+    color: #BDCFF0;
 
 }
 
@@ -58,18 +130,33 @@ h1  {
     position: absolute;
     bottom: 50px;
     right: 50px;
-   
+    color:rgb(68,114,196);
 }
+
+
 
 
 @media (max-aspect-ratio: 1/1) {
     
 
-    #homehero  {
-        background-color: salmon;
-        grid-template-columns: 1fr;
-        grid-template-areas: "splitone" "splittwo";
+    #homeherogrid  {
+       
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "splitone splitone splitone splitone" 
+        "splitone splitone splitone splitone" 
+        "splittwo splittwo splittwo splittwo" 
+        "splittwo splittwo splittwo splittwo";
+    
     }
+
+
+ 
+
+    #nav a{
+        color: #BDCFF0;
+    }
+    
 
 
 
@@ -83,7 +170,7 @@ h1  {
 
 #aboutme {
     
-    padding: 50px;
+ 
     min-height: 50vh;
     display: flex;
     background-color: white;
@@ -103,7 +190,7 @@ h1  {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 
@@ -114,8 +201,12 @@ h1  {
 }
 
 #homemyprojects {
-    background-color: orange;
+    background-color: #BDCFF0;
 
+}
+
+#homemyprojects h1 {
+    color:rgb(68,114,196);
 }
 /* GRID */
 #homemyprojects > div {
@@ -138,11 +229,17 @@ h1  {
 
 
 /* Tile */
-#homemyprojects > div > div {
-
+#homemyprojects > div > div > a {
+    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
+
+    gap: 10px;
+    color: rgb(68,114,196);
+
+    font-size: 1rem;
 }
 
 #homemyprojects a {
@@ -160,16 +257,7 @@ h1  {
 }
 
 
-#homemyprojects div #seeall {
-    background-color: red;
-    
-    width: 300px;
-    height: 300px;
 
-    border-radius: 10%;
-    
-    
-}
 
 
 @media only screen and (max-width: 1400px) {
@@ -193,21 +281,20 @@ h1  {
 
     }
 
-    #homemyprojects div #seeall {
-        background-color: red;
-        
-        max-width: 250px;
-        max-height: 250px;
 
-    }
+    #portimg img {
+
+        width: 300px;
+        height: 300px;
     
+    }
 
 }
 
 @media only screen and (max-width: 800px) {
     
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     #homemyprojects > div {
@@ -232,14 +319,17 @@ h1  {
     }
     
 
-    #homemyprojects div #seeall {
-        background-color: red;
-        
-        height: 190px;
-        width: 190px;
 
+    #portimg  img {
+
+        width: 200px;
+        height: 200px;
+    
     }
     
+    #nav ul {
+        font-size: 1.5rem;
+    }
     
 
 }
@@ -261,32 +351,32 @@ h1  {
     padding: 20px;
 }
 
-#homemyprojects > div > #seeall   { 
+#seeall   { 
     margin: auto;
     grid-area: seeall;
 }
 
-#homemyprojects > div #project1   {
+#project1   {
     grid-area: project1;
 
    
 }
 
-#homemyprojects > div #project2   {
+#project2   {
     grid-area: project2;
 
 }
 
-#homemyprojects > div #project3   {
+#project3   {
     grid-area: project3;
-
 }
-#homemyprojects > div #project4   {
+
+#project4   {
     grid-area: project4;
 
 }
 
-#homemyprojects > div #project5   {
+#project5   {
     grid-area: project5;
 
 }
