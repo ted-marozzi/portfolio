@@ -21,6 +21,66 @@ h1  {
     font-size: 5rem;
 }
 
+#homehero > div  {
+    padding: 50px;
+
+}
+
+
+#homehero   {
+    width: 100%;
+    background-color: slateblue;
+    min-height: 100vh;
+    padding: 0%;
+
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-areas: "splitone splittwo";
+}
+
+#splitone   {
+    grid-area: splitone;
+
+}
+
+
+
+
+#splittwo   {
+    background-color: red;
+    grid-area: splittwo;
+    position: relative;
+
+}
+
+#splittwo > h1  {
+    text-align: right;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+   
+}
+
+
+@media (max-aspect-ratio: 1/1) {
+    
+
+    #homehero  {
+        background-color: salmon;
+        grid-template-columns: 1fr;
+        grid-template-areas: "splitone" "splittwo";
+    }
+
+
+
+   
+}
+
+
+
+
+
+
 #aboutme {
     
     padding: 50px;
@@ -184,6 +244,17 @@ h1  {
 
 }
 
+#homemyprojects > div > div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}   
+#homemyprojects > div > div > span {
+
+    padding: 10px;
+}   
+
 
 #homemyprojects > div > h1 {
     grid-area: homemyprojects;
@@ -195,24 +266,29 @@ h1  {
     grid-area: seeall;
 }
 
-#homemyprojects > div .project1   {
+#homemyprojects > div #project1   {
     grid-area: project1;
+
+   
 }
 
-#homemyprojects > div .project2   {
+#homemyprojects > div #project2   {
     grid-area: project2;
+
 }
 
-#homemyprojects > div .project3   {
+#homemyprojects > div #project3   {
     grid-area: project3;
-}
 
-#homemyprojects > div .project4   {
+}
+#homemyprojects > div #project4   {
     grid-area: project4;
+
 }
 
-#homemyprojects > div .project5   {
+#homemyprojects > div #project5   {
     grid-area: project5;
+
 }
 
 
