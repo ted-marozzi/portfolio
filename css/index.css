@@ -38,6 +38,9 @@ a {
 
 #nav a {
     color: rgb(68, 114, 196);
+    padding: 5px;
+    border-radius: 10px;
+    border-style: solid;
 }
 
 #homehero {
@@ -67,6 +70,8 @@ a {
     grid-column-start: 3;
     grid-column-end: 5;
     z-index: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
@@ -89,7 +94,7 @@ a {
 
 #splitone {
     grid-area: splitone;
-    padding: 50px;
+    padding: 60px;
 }
 
 #splittwo {
@@ -133,8 +138,8 @@ a {
 #splittwo>h1 {
     text-align: right;
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    bottom: 60px;
+    right: 60px;
     color: rgb(68, 114, 196);
 }
 
@@ -148,6 +153,7 @@ a {
     }
     #nav a {
         color: #bdcff0;
+        font-size: 1.25rem;
     }
 }
 

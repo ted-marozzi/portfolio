@@ -1,0 +1,26 @@
+#projectshero {
+    background-color: rgb(68, 114, 196);
+}
+
+
+/* Nav bar list items */
+
+#othernav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 15px;
+    justify-content: flex-end;
+    gap: 25px;
+    color: rgb(68, 114, 196);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#othernav a {
+    padding: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    color: #bdcff0;
+    font-size: 1.25rem;
+}
