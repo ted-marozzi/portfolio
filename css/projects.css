@@ -114,15 +114,25 @@
         text-align: center;
     }
 
-    iframe  {
+    video, iframe  {
         border: none;
         width: 1024px;
         height: 504px;        
     }
 
+    .minorprojimg   {
+        border-radius: 100px;
+        padding: 10px;
+        width: 512px;
+        height: 512px;
+
+    }
+
+
+
     @media screen and (max-width: 1200px)    {
 
-        iframe  {
+        video, iframe  {
 
             width: 512px;
             height: 288px;        
@@ -135,10 +145,18 @@
      
         }
 
+        .minorprojimg   {
+            border-radius: 50px;
+            padding: 10px;
+            width: 256px;
+            height: 256px;
+    
+        }
+
     }
 
     @media screen and (max-width: 600px)    {
-        iframe  {
+        video, iframe  {
 
             width: 256px;
             height: 144px;        
@@ -152,4 +170,17 @@
      
         }
         
+    }
+
+    #gallery    {
+        background: white;
+        text-align: center;
+
+    }
+
+    .gallery    {
+
+        display: grid;
+        grid-template: auto;
+
     }
