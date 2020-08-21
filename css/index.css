@@ -266,6 +266,10 @@ a {
     h1 {
         font-size: 2.5rem;
     }
+
+    p {
+        font-size: 1.25rem;
+    }
     #homemyprojects>div {
         grid-template-columns: 1fr;
         grid-template-areas: "homemyprojects" "seeall" "project1" "project2" "project3" "project4" "project5";
