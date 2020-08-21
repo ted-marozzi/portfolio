@@ -209,8 +209,9 @@ a {
     grid-gap: 50px;
     max-width: 75%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "homemyprojects homemyprojects homemyprojects" "project1 seeall project2" "project3 project4 project5";
+    grid-template-areas: "homemyprojects homemyprojects homemyprojects" "seeall project1 project2" "..... project3 ....";
     color: white;
+    justify-content: center;
 }
 
 
