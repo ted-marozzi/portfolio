@@ -57,7 +57,7 @@
         height: 300px;
     }
     
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1400px) {
         #projectgrid {
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr;
@@ -128,9 +128,13 @@
 
     }
 
+    .gallery .minorprojimg:hover{
+        transform: scale(1.5);
+    }
 
 
-    @media screen and (max-width: 1200px)    {
+
+    @media screen and (max-width: 1400px)    {
 
         video, iframe  {
 
@@ -148,14 +152,14 @@
         .minorprojimg   {
             border-radius: 50px;
             padding: 10px;
-            width: 256px;
-            height: 256px;
+            width: 384px;
+            height: 384px;
     
         }
 
     }
 
-    @media screen and (max-width: 600px)    {
+    @media screen and (max-width: 800px)    {
         video, iframe  {
 
             width: 256px;
@@ -169,18 +173,22 @@
             border-radius: 20px;
      
         }
+
+        .minorprojimg   {
+            border-radius: 50px;
+            padding: 10px;
+            width: 256px;
+            height: 256px;
+    
+        }
         
     }
 
-    #gallery    {
+    .gallery    {
         background: white;
         text-align: center;
-
-    }
-
-    .gallery    {
-
         display: grid;
         grid-template: auto;
 
     }
+
