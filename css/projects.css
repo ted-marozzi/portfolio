@@ -181,6 +181,10 @@
             height: 256px;
     
         }
+
+        .figs{
+            flex-direction: column;
+        }
         
     }
 
@@ -189,6 +193,15 @@
         text-align: center;
         display: grid;
         grid-template: auto;
+
+    }
+
+
+    .figs {
+
+        display: flex;
+        justify-content: center;
+        align-items: center ;
 
     }
 
