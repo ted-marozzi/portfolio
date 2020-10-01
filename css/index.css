@@ -33,6 +33,10 @@ a {
     text-decoration: none;
 }
 
+.boxshadow  {
+    box-shadow: 5px 10px 8px #888888;
+}
+
 
 /* Navigation links */
 
@@ -126,6 +130,8 @@ a {
     border-radius: 10%;
     width: 350px;
     height: 350px;
+    transform: scale(1.5);
+    
 }
 
 
