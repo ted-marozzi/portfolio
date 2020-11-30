@@ -1,21 +1,60 @@
     .projectshero {
         background-color: rgb(68, 114, 196);
+        padding: 5px;
+        
     }
     /* Nav bar list items */
     
     .othernav ul {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-areas : "title title title title title title title homeli projectsli";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         list-style-type: none;
         padding: 15px;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: center;
+       
         gap: 25px;
         color: rgb(68, 114, 196);
         font-size: 2rem;
         text-decoration: none;
+        
+
+
+    }
+
+    @media screen and (max-width: 800px) {
+        .othernav ul {
+            grid-template-areas : "title title" "homeli projectsli";
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    #titleli {
+        
+     
+        grid-area: title;
     }
     
+    #homeli {
+      
+        grid-area: homeli;
+    }
+
+    #projectsli {
+
+        grid-area: projectsli;
+    }
+
     .othernav a {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    
         padding: 5px;
         border-radius: 10px;
         border-style: solid;
@@ -24,8 +63,9 @@
     }
     
     .pagetitle {
+        grid-area: title;
         color: #bdcff0;
-        text-align:center;
+        text-align:left;
     }
     
     #projectgrid {
@@ -52,7 +92,7 @@
     }
     
     #projectgrid img {
-        border-radius: 10%;
+        border-radius: 5%;
         width: 300px;
         height: 300px;
     }
@@ -72,7 +112,7 @@
             min-height: 100vh;
         }
         #projectgrid img {
-            border-radius: 10%;
+            border-radius: 5%;
             width: 200px;
             height: 200px;
         }
@@ -104,10 +144,12 @@
 
     .mainprojimg>img   {
        
-        border-radius: 100px;
+        border-radius: 20px;
         padding: 10px;
-        width: 1024px;
-        height: 1024px;
+        width: 1300px;
+        height: 731px;
+        object-fit: cover;
+        
     }
 
     .mainprojimg > p    {
@@ -121,7 +163,7 @@
     }
 
     .minorprojimg   {
-        border-radius: 100px;
+        border-radius: 5%;
         padding: 10px;
         width: 512px;
         height: 512px;
@@ -144,16 +186,18 @@
 
         .mainprojimg >img  {
 
-            width: 512px;
-            height: 512px;
+            height: 438px;
+            width: 780px;
+            object-fit: cover;
      
         }
 
         .minorprojimg   {
-            border-radius: 50px;
+            border-radius: 5%;
             padding: 10px;
             width: 384px;
             height: 384px;
+        
     
         }
 
@@ -170,12 +214,13 @@
 
             width: 256px;
             height: 256px;
-            border-radius: 20px;
+            border-radius: 5%;
+            object-fit: cover;
      
         }
 
         .minorprojimg   {
-            border-radius: 50px;
+            border-radius: 5%;
             padding: 10px;
             width: 256px;
             height: 256px;

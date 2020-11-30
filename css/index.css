@@ -127,7 +127,7 @@ a {
 /* Actual image */
 
 #portimg>img {
-    border-radius: 10%;
+    border-radius: 5%;
     width: 350px;
     height: 350px;
     transform: scale(1.5);
@@ -243,7 +243,7 @@ a {
 }
 
 #homemyprojects img {
-    border-radius: 10%;
+    border-radius: 5%;
     width: 300px;
     height: 300px;
 }
@@ -281,10 +281,14 @@ a {
         grid-template-columns: 1fr;
         grid-template-areas: "homemyprojects" "seeall" "project1" "project2" "project3" "project4" "project5";
     }
+
+    
     #portimg img {
         width: 200px;
         height: 200px;
     }
+
+
     #nav ul {
         font-size: 1.5rem;
     }
