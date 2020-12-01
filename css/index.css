@@ -215,7 +215,7 @@ a {
     grid-gap: 50px;
     max-width: 75%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "homemyprojects homemyprojects homemyprojects" "seeall project1 project2" "..... project3 ....";
+    grid-template-areas: "homemyprojects homemyprojects homemyprojects" "project1 project2 project3" "project4 project5 project6";
     color: white;
     justify-content: center;
 }
@@ -254,7 +254,7 @@ a {
 @media only screen and (max-width: 1400px) {
     #homemyprojects>div {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "homemyprojects homemyprojects" "seeall project1" "project2 project3" "project4 project5";
+        grid-template-areas: "homemyprojects homemyprojects" "project1 project2" "project3 project4" "project5 project6";
     }
     #homemyprojects img {
         max-width: 250px;
@@ -279,7 +279,7 @@ a {
     }
     #homemyprojects>div {
         grid-template-columns: 1fr;
-        grid-template-areas: "homemyprojects" "seeall" "project1" "project2" "project3" "project4" "project5";
+        grid-template-areas: "homemyprojects" "project1" "project2" "project3" "project4" "project5";
     }
 
     

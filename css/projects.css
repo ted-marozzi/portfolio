@@ -188,7 +188,7 @@
 
             height: 438px;
             width: 780px;
-            object-fit: cover;
+            
      
         }
 
@@ -212,10 +212,10 @@
 
         .mainprojimg >img  {
 
-            width: 256px;
-            height: 256px;
-            border-radius: 5%;
-            object-fit: cover;
+            width: 80vw;
+            height: 45vw;
+            border-radius: 15px;
+         
      
         }
 
