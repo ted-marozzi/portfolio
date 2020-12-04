@@ -62,7 +62,11 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "splitone splitone splittwo splittwo" "splitone splitone splittwo splittwo" "splitone splitone splittwo splittwo" "splitone splitone splittwo splittwo";
+    grid-template-areas: 
+    "splitone splitone splittwo splittwo" 
+    "splitone splitone splittwo splittwo"
+     "splitone splitone splittwo splittwo" 
+     "splitone splitone splittwo splittwo";
 }
 
 
@@ -155,7 +159,10 @@ a {
 @media (max-aspect-ratio: 1/1) {
     #homeherogrid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "splitone splitone splitone splitone" "splitone splitone splitone splitone" "splittwo splittwo splittwo splittwo" "splittwo splittwo splittwo splittwo";
+        grid-template-areas: "splitone splitone splitone splitone" 
+        "splitone splitone splitone splitone" 
+        "splittwo splittwo splittwo splittwo" 
+        "splittwo splittwo splittwo splittwo";
     }
     #nav a {
         color: #bdcff0;
@@ -215,7 +222,10 @@ a {
     grid-gap: 50px;
     max-width: 75%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "homemyprojects homemyprojects homemyprojects" "project1 project2 project3" "project4 project5 project6";
+    grid-template-areas: 
+    "homemyprojects homemyprojects homemyprojects" 
+    "project1 project2 project3" 
+    "project4 project5 project6";
     color: white;
     justify-content: center;
 }
@@ -254,7 +264,11 @@ a {
 @media only screen and (max-width: 1400px) {
     #homemyprojects>div {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "homemyprojects homemyprojects" "project1 project2" "project3 project4" "project5 project6";
+        grid-template-areas: 
+        "homemyprojects homemyprojects"
+         "project1 project2" 
+         "project3 project4" 
+         "project5 project6";
     }
     #homemyprojects img {
         max-width: 250px;
@@ -279,7 +293,8 @@ a {
     }
     #homemyprojects>div {
         grid-template-columns: 1fr;
-        grid-template-areas: "homemyprojects" "project1" "project2" "project3" "project4" "project5";
+        grid-template-areas: "homemyprojects" 
+        "project1" "project2" "project3" "project4" "project5";
     }
 
     

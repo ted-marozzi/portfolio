@@ -23,7 +23,8 @@
                     </h1>
                 </li>
                 <li id="homeli"><a href="index.html">Home</a></li>
-                <li id = "projectsli"><a href="/index.html#homemyprojects">Projects</a></li>
+                <li id = "projectsli"><a href="/index.html#homemyprojects">
+                    Projects</a></li>
             </ul>
         </div>
 
@@ -33,29 +34,34 @@
 
 
     <section class=projectcontent>
+
+        <div class="codedemo">
+            <a href = "https://github.com/ted-marozzi/pointsbet-likes">
+                <h2 class="code">Code</h1>
+            </a>
+            <a href = "https://docs.google.com/spreadsheets/d/1fd4rigWrHU5Rq5y7TZr6YR30uVKpme39_r6yaXJBfwI/edit?usp=sharing">
+                <h2 class="demo">Demo</h1>
+            </a>
+        </div>
+
+        
         <div class="mainprojimg">
-            <img style="object-position: top;" width="500px" alt="Pointsbet Data Chart" src="img//pointsbet-analytics/pred-sp.png">
+            <img style="object-position: top;" width="500px" 
+            alt="Pointsbet Data Chart" src="img//pointsbet-analytics/pred-sp.png">
             <p>Predicted Share Price Vs Actual Share Price</p>
         </div>
         <h1>Description</h1>
 
         <p>
-            This project was inspired by Pointsbets Holdings strong performace in the AUS
-            and US markets. This idea was that PBH is a young growth company and thus
-            a lot of the companys valuation is derived from its abilty to consume 
-            betting marketshare, especially in the large US market. Thus if we could model
-            the growth of the company more accurately than the stock market, there is potential
-            to purchase PBH shares at a lower price than their true valuation.
+            This project was inspired by Pointsbets Holdings strong performace in the AUS and US markets. This idea was that PBH is a young growth company and thus a lot of the companys valuation is derived from its abilty to consume betting marketshare, especially in the large US market. Thus if we could model the growth of the company more accurately than the stock market, there is potential to purchase PBH shares at a lower price than their true valuation.
             <br><br>
-            This is where the my <a href="https://github.com/ted-marozzi/pointsbet-likes">python bot</a>
-            comes in. It is an automated script that is run on a personal linux server every day.
-            The script logs on to facebook, collects the likes of the pointsbet facebook page
-            and then scrapes the share price from the asx and logs the result in csv format.
+            This is where the my <a href="https://github.com/ted-marozzi/pointsbet-likes">python bot</a> comes in. It is an automated script that is run on a personal linux server every day. The script logs on to facebook, collects the likes of the pointsbet facebook page
+            and then scrapes the share price from the asx and logs the result.
             <br><br>
-            This is then automatically imported into a google sheet where a linear regression
-            takes place to estimate the share price taking into account the facebook page likes growth.
+            This is then automatically imported into a google sheet where a linear regression takes place to estimate the share price taking into account the facebook page likes growth.
             <br><br>
-            Check out all the analytics <a href="https://docs.google.com/spreadsheets/d/1fd4rigWrHU5Rq5y7TZr6YR30uVKpme39_r6yaXJBfwI/edit?usp=sharing">here</a>.
+            Check out all the analytics 
+            <a href="https://docs.google.com/spreadsheets/d/1fd4rigWrHU5Rq5y7TZr6YR30uVKpme39_r6yaXJBfwI/edit?usp=sharing">here</a>.
             All of this happens without my intervention.
 
             The easiest graph to use is probably the percentage opportunity graph.
@@ -66,30 +72,14 @@
                 <p>Percentage opportunity</p>
             </div>
         <p>
-            Basically, the best time to use this data is a few weeks before earnings
-            release when the stock market is most uncertain about the quarterly results
-            and the share price is the most likely to be misvalued. If before earning the
-            percentage opportunity is greater then 10% then the shares may be undervalued.
-            This data MUST be used in conjunction with fundementals of the company
-            as it is only an indicator of growth not the many other factors that contribute
-            to a companies share price. 
+            Basically, the best time to use this data is a few weeks before earnings release when the stock market is most uncertain about the quarterly results and the share price is the most likely to be misvalued. If before earning the percentage opportunity is greater then 10% then the shares may be undervalued. This data MUST be used in conjunction with fundementals of the company as it is only an indicator of growth not the many other factors that contribute to a companies share price. 
 
             <br><br>
 
-            The hope is that this bot will track the expansion into the large US markets
-            and catch an abrupt increase in daily page likes and hence be a leading
-            indicator to the share price. A fundemental assumption made is that 
-            as pbh grows into these markets that the likes of the page will growth
-            grow governed by function of the same class (e.g O(e^x), O(x^2)) and that 
-            company growth is approximately linearly proportional to the share price.
+            The hope is that this bot will track the expansion into the large US markets and catch an abrupt increase in daily page likes and hence be a leading indicator to the share price. A fundemental assumption made is that as pbh grows into these markets that the likes of the page will growth grow governed by function of the same class (e.g O(e^x), O(x^2)) and that  company growth is approximately linearly proportional to the share price.
 
             <br><br>
-            Disclaimer: It is not intended as legal, 
-            financial or investment advice and should not 
-            be construed or relied on as such. Before making 
-            any commitment of a legal or financial nature you 
-            should seek advice from a qualified and registered 
-            legal practitioner or financial or investment adviser.
+            Disclaimer: It is not intended as legal, financial or investment advice and should not be construed or relied on as such. Before making any commitment of a legal or financial nature you should seek advice from a qualified and registered legal practitioner or financial or investment adviser.
         
         </p>
 
