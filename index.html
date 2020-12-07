@@ -4,8 +4,7 @@
 <head>
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" 
-    content="PjzwxP4KCtIguv-zinfXiR05YhiPsdbZP9Tj1u76tCk" /> 
+    <meta name="google-site-verification" content="PjzwxP4KCtIguv-zinfXiR05YhiPsdbZP9Tj1u76tCk" />
     <title>Edward Marozzi's Portfolio</title>
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <link href="css/projects.css" rel="stylesheet" type="text/css">
@@ -47,17 +46,16 @@
                 About Me
             </h1>
             <p>
-                Hey! I am a passionate programmer, looking to kickstart my in software development. I am armed with an eye for detail and a drive for success, here is what I can do for you.
+                Hey! I am a passionate programmer, looking to kickstart my in software development. I am armed with an
+                eye for detail and a drive for success, here is what I can do for you.
             </p>
             <!-- Icon links -->
             <div class="icons">
                 <a href="https://github.com/ted-marozzi">
-                    <img width="50px" height="50px" 
-                    src="img/logo/github.png" alt="github logo">
+                    <img width="50px" height="50px" src="img/logo/github.png" alt="github logo">
                 </a>
                 <a href="https://www.linkedin.com/in/edward-marozzi/">
-                    <img width="50px" height="50px" 
-                    src="img/logo/linkedin.png" alt="linkedin logo">
+                    <img width="50px" height="50px" src="img/logo/linkedin.png" alt="linkedin logo">
                 </a>
             </div>
 
@@ -66,42 +64,102 @@
 
     <!-- Project Links grid -->
     <section id="homemyprojects">
-        <div>
-            <h1>Featured projects</h1>
 
-            
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function dropDown(id) {
+                id += 's';
+                console.log(id);
+                document.getElementById(id).classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <h1 id="projtitle">Featured projects</h1>
+
+        <div class="projselector">
+
+
+            <div>
+                <button id="lang" onclick="dropDown(this.id)" class="dropbtn rounded">Language</button>
+                <div id="langs" class="dropdown-content">
+                    <a>HTML/CSS</a>
+                    <a>Python</a>
+                    <a>JavaScript</a>
+                    <a>Dart</a>
+                    <a>C/C++</a>
+                </div>
+
+            </div>            
+            <div>
+                <button id="frame" onclick="dropDown(this.id)" class="dropbtn rounded">Framework</button>
+                <div id="frames" class="dropdown-content">
+                    <a>Flutter</a>
+                    <a>Arduino</a>
+
+                </div>
+
+            </div>
+            <div>
+                <button id="domain" onclick="dropDown(this.id)" class="dropbtn rounded">Domain</button>
+                <div id="domains" class="dropdown-content">
+                    <a>Web Development</a>
+                    <a>Statistics</a>
+                    <a>Embedded Systems</a>
+                    <a>Mobile Apps</a>
+                    <a>Finance</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class=projgrid>
+
+
+
+
             <div id="project1">
                 <a href="https://github.com/ted-marozzi/portfolio">
-                    <img width="300px" height="300px" 
-                    src="img/general/site.png"><span>Website Code</span>
+                    <img width="300px" height="300px" src="img/general/site.png"><span>Website Code</span>
                 </a>
             </div>
-  
+
             <div id="project2">
                 <a href="electronicprosthetic.html">
-                    <img width="300px" height="300px" 
-                    src="img/electronic-prosthetic/drill.png">
+                    <img width="300px" height="300px" src="img/electronic-prosthetic/drill.png">
                     <span>Electronic Prosthetic</span>
                 </a>
             </div>
             <div id="project3">
                 <a href="stockpile.html">
-                    <img width="300px" height="300px" 
-                    src="img/stockpile/logo.png">
+                    <img width="300px" height="300px" src="img/stockpile/logo.png">
                     <span>stockpile</span>
                 </a>
             </div>
             <div id="project4">
                 <a href="pointsbet-analytics.html">
-                    <img width="300px" height="300px" 
-                    src="img/pointsbet-analytics/pointsbet-logo.png">
+                    <img width="300px" height="300px" src="img/pointsbet-analytics/pointsbet-logo.png">
                     <span>Pointsbet Analytics </span>
                 </a>
             </div>
             <div id="project5">
                 <a href="arbing.html">
-                    <img width="300px" height="300px" 
-                    src="img/arbing-analytics/thumbnail.png">
+                    <img width="300px" height="300px" src="img/arbing-analytics/thumbnail.png">
                     <span>Arbing Analytics</span>
                 </a>
             </div>
