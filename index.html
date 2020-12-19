@@ -66,31 +66,48 @@
     <section id="homemyprojects">
 
         <script>
+
+            function hideFilters()  {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            
+
+            }
             /* When the user clicks on the button, 
             toggle between hiding and showing the dropdown content */
             function dropDown(id) {
+
+
+                hideFilters();
+
                 id += 's';
-                console.log(id);
                 document.getElementById(id).classList.toggle("show");
             }
 
             // Close the dropdown if the user clicks outside of it
             window.onclick = function (event) {
                 if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                    }
+                    hideFilters();
                 }
             }
         </script>
 
         <h1 id="projtitle">Featured projects</h1>
+        
+        <div id="filterrow">
+            <b1 id="filter" class="darkblue">Filter projects by...</b1>
 
+            <button onclick="" class="reset rounded">Reset</button>
+            
+        </div>
+       
         <div class="projselector">
 
 
@@ -122,49 +139,49 @@
                     <a>Embedded Systems</a>
                     <a>Mobile Apps</a>
                     <a>Finance</a>
+                    <a>Spreadsheet</a>
                 </div>
 
             </div>
+            
         </div>
+        <div>
+            <b1 id="curfilters" class="darkblue">Current filters applied:</b1>
 
-
+        </div>
+       
         <div class=projgrid>
 
-
-
-
-            <div id="project1">
+            <div id="project1" class="html/css javascript webdevelopment">
                 <a href="https://github.com/ted-marozzi/portfolio">
                     <img width="300px" height="300px" src="img/general/site.png"><span>Website Code</span>
                 </a>
             </div>
 
-            <div id="project2">
+            <div id="project2" class="c/c++ arduino embeddedsystems">
                 <a href="electronicprosthetic.html">
                     <img width="300px" height="300px" src="img/electronic-prosthetic/drill.png">
                     <span>Electronic Prosthetic</span>
                 </a>
             </div>
-            <div id="project3">
+            <div id="project3" class="html/css javascript dart flutter webdevelopment mobileapp">
                 <a href="stockpile.html">
                     <img width="300px" height="300px" src="img/stockpile/logo.png">
                     <span>stockpile</span>
                 </a>
             </div>
-            <div id="project4">
+            <div id="project4" class="python statistics embeddedsystems finance spreadsheet">
                 <a href="pointsbet-analytics.html">
                     <img width="300px" height="300px" src="img/pointsbet-analytics/pointsbet-logo.png">
                     <span>Pointsbet Analytics </span>
                 </a>
             </div>
-            <div id="project5">
+            <div id="project5" class="statistics finance spreadsheet">
                 <a href="arbing.html">
                     <img width="300px" height="300px" src="img/arbing-analytics/thumbnail.png">
                     <span>Arbing Analytics</span>
                 </a>
             </div>
-
-
 
 
         </div>

@@ -11,6 +11,26 @@ html, body {
     min-height: 100vh;
 }
 
+.lightblue   {
+   color: #bdcff0;
+}
+.darkblue   {
+    color: rgb(68, 114, 196);
+}
+
+#filter {
+    font-size: 20px;
+    margin: 0px;
+    width: auto;
+}
+
+#curfilters {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 40px;
+}
+
 /* Project selector */
 
 .projselector {
@@ -20,6 +40,27 @@ html, body {
     padding-top: 30px;
     align-items: center;
 }
+
+#filterrow  {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* Reset */
+.reset {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* Dropdown Button */
 
@@ -81,6 +122,8 @@ body section {
 h1 {
     font-size: 5rem;
 }
+
+
 
 span, p {
     font-size: 1.5rem;
