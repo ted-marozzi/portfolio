@@ -67,6 +67,27 @@
 
         <script>
 
+            function reset()    {
+                document.getElementById("curfilters").innerHTML = "Current filters applied: ";
+
+                let len = document.getElementById("projects").children.length;
+
+                    for(i = 0; i < len; i++)    {
+                        let proj = document.getElementById("projects").children[i];
+
+                        if(!proj.classList.contains("show"))  {
+                            proj.classList.add("show");
+                        }
+
+
+                    }
+            }
+
+
+
+
+            
+
             function hideFilters()  {
 
                 var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -88,6 +109,7 @@
                 hideFilters();
 
                 id += 's';
+
                 document.getElementById(id).classList.toggle("show");
             }
 
@@ -97,6 +119,33 @@
                     hideFilters();
                 }
             }
+
+            function addFilter(id) {
+                let curfilters = document.getElementById("curfilters");
+                if(!curfilters.innerHTML.includes(id))  {
+                    curfilters.innerHTML += " " + id;
+
+                    id = id.split(" ").join("");
+                  
+                    
+
+                    for(i = 0; i < document.getElementById("projects").children.length; i++)    {
+                  
+                        let proj = document.getElementById("projects").children[i];
+
+                        console.log(document.getElementById("projects").children);
+                        if(!proj.classList.contains(id)) {
+                            
+                            proj.remove("show");
+                            i = i - 1;
+                        }
+
+
+                    }
+                }
+            }
+
+
         </script>
 
         <h1 id="projtitle">Featured projects</h1>
@@ -104,8 +153,7 @@
         <div id="filterrow">
             <b1 id="filter" class="darkblue">Filter projects by...</b1>
 
-            <button onclick="" class="reset rounded">Reset</button>
-            
+
         </div>
        
         <div class="projselector">
@@ -114,19 +162,19 @@
             <div>
                 <button id="lang" onclick="dropDown(this.id)" class="dropbtn rounded">Language</button>
                 <div id="langs" class="dropdown-content">
-                    <a>HTML/CSS</a>
-                    <a>Python</a>
-                    <a>JavaScript</a>
-                    <a>Dart</a>
-                    <a>C/C++</a>
+                    <span onclick="addFilter(this.innerHTML)">HTML/CSS</span>
+                    <span onclick="addFilter(this.innerHTML)">Python</span>
+                    <span onclick="addFilter(this.innerHTML)">JavaScript</span>
+                    <span onclick="addFilter(this.innerHTML)">Dart</span>
+                    <span onclick="addFilter(this.innerHTML)">C/C++</span>
                 </div>
 
             </div>            
             <div>
                 <button id="frame" onclick="dropDown(this.id)" class="dropbtn rounded">Framework</button>
                 <div id="frames" class="dropdown-content">
-                    <a>Flutter</a>
-                    <a>Arduino</a>
+                    <span  onclick="addFilter(this.innerHTML)">Flutter</span>
+                    <span  onclick="addFilter(this.innerHTML)">Arduino</span>
 
                 </div>
 
@@ -134,49 +182,53 @@
             <div>
                 <button id="domain" onclick="dropDown(this.id)" class="dropbtn rounded">Domain</button>
                 <div id="domains" class="dropdown-content">
-                    <a>Web Development</a>
-                    <a>Statistics</a>
-                    <a>Embedded Systems</a>
-                    <a>Mobile Apps</a>
-                    <a>Finance</a>
-                    <a>Spreadsheet</a>
+                    <span onclick="addFilter(this.innerHTML)">Web Development</span>
+                    <span onclick="addFilter(this.innerHTML)">Statistics</span>
+                    <span onclick="addFilter(this.innerHTML)">Embedded Systems</span>
+                    <span onclick="addFilter(this.innerHTML)">Mobile Apps</span>
+                    <span onclick="addFilter(this.innerHTML)">Finance</span>
+                    <span onclick="addFilter(this.innerHTML)">Spreadsheet</span>
                 </div>
+                
 
             </div>
             
+            
         </div>
+  
         <div>
+            <button onclick="reset()" class="reset rounded">Reset</button>
             <b1 id="curfilters" class="darkblue">Current filters applied:</b1>
-
+       
         </div>
        
-        <div class=projgrid>
+        <div id="projects" class=projgrid>
 
-            <div id="project1" class="html/css javascript webdevelopment">
+            <div id="project1" class="HTML/CSS JavaScript WebDevelopment">
                 <a href="https://github.com/ted-marozzi/portfolio">
                     <img width="300px" height="300px" src="img/general/site.png"><span>Website Code</span>
                 </a>
             </div>
 
-            <div id="project2" class="c/c++ arduino embeddedsystems">
+            <div id="project2" class="C/C++ Arduino EmbeddedSystems">
                 <a href="electronicprosthetic.html">
                     <img width="300px" height="300px" src="img/electronic-prosthetic/drill.png">
                     <span>Electronic Prosthetic</span>
                 </a>
             </div>
-            <div id="project3" class="html/css javascript dart flutter webdevelopment mobileapp">
+            <div id="project3" class="HTML/CSS JavaScript Dart Flutter WebDevelopment MobileApp">
                 <a href="stockpile.html">
                     <img width="300px" height="300px" src="img/stockpile/logo.png">
                     <span>stockpile</span>
                 </a>
             </div>
-            <div id="project4" class="python statistics embeddedsystems finance spreadsheet">
+            <div id="project4" class="Python Statistics EmbeddedSystems Finance Spreadsheet">
                 <a href="pointsbet-analytics.html">
                     <img width="300px" height="300px" src="img/pointsbet-analytics/pointsbet-logo.png">
                     <span>Pointsbet Analytics </span>
                 </a>
             </div>
-            <div id="project5" class="statistics finance spreadsheet">
+            <div id="project5" class="Statistics Finance Spreadsheet">
                 <a href="arbing.html">
                     <img width="300px" height="300px" src="img/arbing-analytics/thumbnail.png">
                     <span>Arbing Analytics</span>
