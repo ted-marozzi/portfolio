@@ -327,23 +327,13 @@ a {
     width: 250px;
     padding: 10px;
     margin: auto;
-    min-width: 275px;
+    min-width: 325px;
    
 }
 
 #lang span {
     color: rgb(68, 114, 196);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* Medium size screens */
