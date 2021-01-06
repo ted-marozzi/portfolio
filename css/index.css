@@ -29,7 +29,7 @@ html, body {
     display: flex;
     flex-direction: row;
 
-    padding-top: 40px;
+    padding: 40px;
 }
 
 /* Project selector */
@@ -56,7 +56,6 @@ html, body {
 .reset {
     background-color: rgb(255, 0, 0);
     color: white;
-    
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -289,10 +288,17 @@ a {
     justify-content: space-evenly;
 }
 
+
 /* Projects */
 
 #homemyprojects {
-    background-color: #bdcff0;
+    background-color: #bdcff0; 
+}
+
+#projcontent {
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
 }
 
 #homemyprojects h1 {
@@ -300,39 +306,6 @@ a {
     text-align: center;
 }
 
-/* Grid */
-
-#homemyprojects>.projgrid {
-    margin: auto;
-    text-align: center;
-    display: grid;
-    grid-gap: 50px;
-    max-width: 75%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "homemyprojects homemyprojects homemyprojects" "project1 project2 project3" "project4 project5 project6";
-    color: white;
-    justify-content: center;
-}
-
-/* Image Tile */
-
-#homemyprojects>.projgrid>div>a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
-    color: rgb(68, 114, 196);
-    font-size: 1rem;
-}
-
-/* Image links */
-
-#homemyprojects a {
-    margin: auto;
-    text-decoration: none;
-    color: white;
-}
 
 #homemyprojects img {
     border-radius: 5%;
@@ -340,13 +313,43 @@ a {
     height: 300px;
 }
 
+#projgrid   {
+    
+    display: flex;
+    flex-flow: row wrap;
+   
+}
+
+#homemyprojects .proj  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 10px;
+    margin: auto;
+    min-width: 275px;
+   
+}
+
+#lang span {
+    color: rgb(68, 114, 196);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Medium size screens */
 
 @media only screen and (max-width: 1400px) {
-    #homemyprojects>.projgrid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "homemyprojects homemyprojects" "project1 project2" "project3 project4" "project5 project6";
-    }
+
     #homemyprojects img {
         max-width: 250px;
         max-height: 250px;
@@ -366,10 +369,7 @@ a {
     p {
         font-size: 1.25rem;
     }
-    #homemyprojects>.projgrid {
-        grid-template-columns: 1fr;
-        grid-template-areas: "homemyprojects" "project1" "project2" "project3" "project4" "project5";
-    }
+
     #portimg img {
         width: 200px;
         height: 200px;
@@ -379,42 +379,4 @@ a {
     }
 }
 
-#homemyprojects>.projgrid>div {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
 
-#homemyprojects>.projgrid>div>span {
-    padding: 10px;
-}
-
-#homemyprojects>.projgrid>h1 {
-    grid-area: homemyprojects;
-    padding: 20px;
-}
-
-#seeall {
-    margin: auto;
-    grid-area: seeall;
-}
-
-#project1 {
-    grid-area: project1;
-}
-
-#project2 {
-    grid-area: project2;
-}
-
-#project3 {
-    grid-area: project3;
-}
-
-#project4 {
-    grid-area: project4;
-}
-
-#project5 {
-    grid-area: project5;
-}

@@ -68,19 +68,9 @@
         <script>
 
             function reset()    {
-                document.getElementById("curfilters").innerHTML = "Current filters applied: ";
-
-                let len = document.getElementById("projects").children.length;
-
-                    for(i = 0; i < len; i++)    {
-                        let proj = document.getElementById("projects").children[i];
-
-                        if(!proj.classList.contains("show"))  {
-                            proj.classList.add("show");
-                        }
-
-
-                    }
+             
+            
+                location.reload(true);
             }
 
 
@@ -129,11 +119,11 @@
                   
                     
 
-                    for(i = 0; i < document.getElementById("projects").children.length; i++)    {
+                    for(i = 0; i < document.getElementById("projgrid").children.length; i++)    {
                   
-                        let proj = document.getElementById("projects").children[i];
+                        let proj = document.getElementById("projgrid").children[i];
 
-                        console.log(document.getElementById("projects").children);
+                        console.log(document.getElementById("projgrid").children);
                         if(!proj.classList.contains(id)) {
                             
                             proj.remove("show");
@@ -147,6 +137,9 @@
 
 
         </script>
+        <div id="projcontent">
+
+        
 
         <h1 id="projtitle">Featured projects</h1>
         
@@ -202,41 +195,41 @@
        
         </div>
        
-        <div id="projects" class=projgrid>
+        <div id="projgrid">
 
-            <div id="project1" class="HTML/CSS JavaScript WebDevelopment">
-                <a href="https://github.com/ted-marozzi/portfolio">
-                    <img width="300px" height="300px" src="img/general/site.png"><span>Website Code</span>
-                </a>
-            </div>
+          
+            <a class="proj HTML/CSS JavaScript WebDevelopment" href="https://github.com/ted-marozzi/portfolio">
+                <img width="300px" height="300px" src="img/general/site.png"><span>Website Code</span>
+            </a>
+          
 
-            <div id="project2" class="C/C++ Arduino EmbeddedSystems">
-                <a href="electronicprosthetic.html">
-                    <img width="300px" height="300px" src="img/electronic-prosthetic/drill.png">
-                    <span>Electronic Prosthetic</span>
-                </a>
-            </div>
-            <div id="project3" class="HTML/CSS JavaScript Dart Flutter WebDevelopment MobileApp">
-                <a href="stockpile.html">
-                    <img width="300px" height="300px" src="img/stockpile/logo.png">
-                    <span>stockpile</span>
-                </a>
-            </div>
-            <div id="project4" class="Python Statistics EmbeddedSystems Finance Spreadsheet">
-                <a href="pointsbet-analytics.html">
-                    <img width="300px" height="300px" src="img/pointsbet-analytics/pointsbet-logo.png">
-                    <span>Pointsbet Analytics </span>
-                </a>
-            </div>
-            <div id="project5" class="Statistics Finance Spreadsheet">
-                <a href="arbing.html">
-                    <img width="300px" height="300px" src="img/arbing-analytics/thumbnail.png">
-                    <span>Arbing Analytics</span>
-                </a>
-            </div>
+            <a class="proj C/C++ Arduino EmbeddedSystems" href="electronicprosthetic.html">
+                <img width="300px" height="300px" src="img/electronic-prosthetic/drill.png">
+                <span>Electronic Prosthetic</span>
+            </a>
+         
+            <a class="proj HTML/CSS JavaScript Dart Flutter WebDevelopment MobileApp" href="stockpile.html">
+                <img width="300px" height="300px" src="img/stockpile/logo.png">
+                <span>stockpile</span>
+            </a>
+         
+            
+            <a class="proj Python Statistics EmbeddedSystems Finance Spreadsheet" href="pointsbet-analytics.html">
+                <img width="300px" height="300px" src="img/pointsbet-analytics/pointsbet-logo.png">
+                <span>Pointsbet Analytics </span>
+            </a>
+      
+       
+            <a class="proj Statistics Finance Spreadsheet" href="arbing.html">
+                <img width="300px" height="300px" src="img/arbing-analytics/thumbnail.png">
+                <span>Arbing Analytics</span>
+            </a>
+        
 
 
         </div>
+
+    </div>
     </section>
 
 </body>
