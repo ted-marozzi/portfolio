@@ -367,6 +367,20 @@ a {
     #nav ul {
         font-size: 1.5rem;
     }
+
+    #homemyprojects .proj  {
+ 
+        width: 250px;
+        padding: 10px;
+        margin: auto;
+        min-width: 200px;
+       
+    }
+
+    #homemyprojects img {
+        max-width: 200px;
+        max-height: 200px;
+    }
 }
 
 
