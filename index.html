@@ -40,6 +40,8 @@
         </div>
     </section>
 
+
+
     <!-- About me -->
     <section id="aboutme">
         <div>
@@ -47,8 +49,7 @@
                 About Me
             </h1>
             <p>
-                Hey! I am a passionate programmer, looking to kickstart my career in software development. I am armed with an
-                eye for detail and a drive for success, here is what I can do for you.
+                Hey! I am a passionate and talented Software Engineer, feel free to contact me on linkedIn or check out my projects below.
             </p>
             <!-- Icon links -->
             <div class="icons">
@@ -60,6 +61,24 @@
                 </a>
             </div>
 
+        </div>
+    </section>
+
+    <section id="featured">
+        <div class="featured">
+            <h1>
+                Featured Project: Tick tock todo
+            </h1>
+            
+            <a class="proj HTML/CSS JavaScript WebDevelopment" href="ticktocktodo.html">
+                <img width="500px" height="500px" src="img/tick-tock-todo/tick-tock-todo.png">
+                
+            </a>
+            <div class="projdes">
+                
+                A clean and minimal folder based todo app that anyone can contribute too.
+            </div>
+          
         </div>
     </section>
 
@@ -142,12 +161,14 @@
 
         
 
-        <h1 id="projtitle">Featured projects</h1>
+        
+
+        <h1 id="projtitle">Projects</h1>
+        
+
         
         <div id="filterrow">
             <b1 id="filter" class="darkblue">Filter projects by...</b1>
-
-
         </div>
        
         <div class="projselector">
@@ -169,6 +190,9 @@
                 <div id="frames" class="dropdown-content">
                     <button  onclick="addFilter(this.innerHTML)">Flutter</button>
                     <button  onclick="addFilter(this.innerHTML)">Arduino</button>
+                    <button  onclick="addFilter(this.innerHTML)">React</button>
+                    <button  onclick="addFilter(this.innerHTML)">Express</button>
+                    <button  onclick="addFilter(this.innerHTML)">Node</button>
 
                 </div>
 
@@ -184,21 +208,33 @@
                     <button onclick="addFilter(this.innerHTML)">Spreadsheet</button>
                 </div>
                 
-
             </div>
-            
-            
-        </div>
-  
-        <div>
             <button onclick="reset()" class="reset rounded">Reset</button>
-            <b1 id="curfilters" class="darkblue">Current filters applied:</b1>
-       
+            
+            
+            
         </div>
+        <b1 id="curfilters" class="darkblue">Current filters applied:</b1>
+  
+  
        
         <div id="projgrid">
 
-          
+            <a class="proj HTML/CSS JavaScript WebDevelopment React Express Node" href="ticktocktodo.html">
+                <img width="300px" height="300px" src="img/tick-tock-todo/tick-tock-todo.png">
+                <span>Tick Tock Todo</span>
+            </a>
+
+            <a class="proj HTML/CSS JavaScript Dart Flutter WebDevelopment MobileApp" href="stockpile.html">
+                <img width="300px" height="300px" src="img/stockpile/logo.png">
+                <span>stockpile</span>
+            </a>
+            
+            <a class="proj Python Statistics EmbeddedSystems Finance Spreadsheet" href="pointsbet-analytics.html">
+                <img width="300px" height="300px" src="img/pointsbet-analytics/pointsbet-logo.png">
+                <span>Pointsbet Analytics </span>
+            </a>
+
             <a class="proj HTML/CSS JavaScript WebDevelopment" href="https://github.com/ted-marozzi/portfolio">
                 <img width="300px" height="300px" src="img/general/site.png"><span>Website Code</span>
             </a>
@@ -209,16 +245,10 @@
                 <span>Electronic Prosthetic</span>
             </a>
          
-            <a class="proj HTML/CSS JavaScript Dart Flutter WebDevelopment MobileApp" href="stockpile.html">
-                <img width="300px" height="300px" src="img/stockpile/logo.png">
-                <span>stockpile</span>
-            </a>
+
          
             
-            <a class="proj Python Statistics EmbeddedSystems Finance Spreadsheet" href="pointsbet-analytics.html">
-                <img width="300px" height="300px" src="img/pointsbet-analytics/pointsbet-logo.png">
-                <span>Pointsbet Analytics </span>
-            </a>
+
       
        
             <a class="proj Statistics Finance Spreadsheet" href="arbing.html">

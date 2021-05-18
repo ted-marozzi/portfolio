@@ -32,6 +32,24 @@ html, body {
     padding: 40px;
 }
 
+.projdes    {
+
+    width: 300px;
+
+
+}
+
+.featured   {
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 /* Project selector */
 
 .projselector {
@@ -54,7 +72,7 @@ html, body {
 
 /* Reset */
 .reset {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(228, 56, 56);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -295,6 +313,19 @@ a {
 
 
 /* Projects */
+
+#featured {
+    background-color: rgb(68, 114, 196);
+    color:#bdcff0;
+}
+
+#featured img {
+    padding: 1em;
+    border-radius: 5%;
+    width: 500px;
+    height: 500px;
+}
+
 
 #homemyprojects {
     background-color: #bdcff0; 
